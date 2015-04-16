@@ -184,4 +184,6 @@ app.post('/resetPassword', function(req, res) {
   res.render('resetPasswordSuccess.jade');
 });
 
-app.listen(process.env.OPENSHIFT_NODEJS_PORT || 7777, process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+app.listen(port, ip);
