@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "supervisor server.js"
   },
+  "main": "server.js",
   "dependencies": {
     "body-parser": "~1.0.2",
     "connect": "~2.25.5",
